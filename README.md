@@ -4,7 +4,7 @@
 - REAL-VALUED (MEDICAL) TIME SERIES GENERATION WITH RECURRENT CONDITIONAL GANS  
     https://arxiv.org/pdf/1706.02633.pdf
     
-- Generative Adversarial Nets
+- Generative Adversarial Nets  
     https://arxiv.org/pdf/1406.2661.pdf
     
 - Conditional Generative Adversarial Nets  
@@ -18,16 +18,16 @@
     
     
 （参考リポジトリ）
-- RGAN
+- RGAN  
     https://github.com/ratschlab/RGAN
 
-- SyntheticMedData
+- SyntheticMedData  
     https://github.com/naegawa/SyntheticMedData
 
-- Deep Learning with Differential Privacy
+- Deep Learning with Differential Privacy  
     https://github.com/tensorflow/models/tree/master/research/differential_privacy
     
-- Keras-GAN
+- Keras-GAN  
     https://github.com/eriklindernoren/Keras-GAN
 
     
