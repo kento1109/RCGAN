@@ -1,5 +1,7 @@
 # RCGAN
 
+---
+
 （参考論文）
 - REAL-VALUED (MEDICAL) TIME SERIES GENERATION WITH RECURRENT CONDITIONAL GANS  
     https://arxiv.org/pdf/1706.02633.pdf
@@ -16,7 +18,7 @@
 - Improved Techniques for Training GANs  
     https://arxiv.org/pdf/1606.03498.pdf
     
-    
+---    
 （参考リポジトリ）
 - RGAN  
     https://github.com/ratschlab/RGAN
