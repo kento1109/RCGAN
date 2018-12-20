@@ -36,5 +36,5 @@
  ---
  
  （その他参考サイト）
- - 注目のプライバシー Differential Privacy
+ - 注目のプライバシー Differential Privacy  
      https://www.jstage.jst.go.jp/article/jssst/29/4/29_4_40/_pdf
