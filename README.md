@@ -13,7 +13,7 @@
 - Deep Learning with Differential Privacy  
     https://arxiv.org/pdf/1607.00133.pdf
 
-- Improved Techniques for Training GANs
+- Improved Techniques for Training GANs  
     https://arxiv.org/pdf/1606.03498.pdf
     
     
