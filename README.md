@@ -19,6 +19,7 @@
     https://arxiv.org/pdf/1606.03498.pdf
     
 ---    
+
 （参考リポジトリ）
 - RGAN  
     https://github.com/ratschlab/RGAN
@@ -32,4 +33,8 @@
 - Keras-GAN  
     https://github.com/eriklindernoren/Keras-GAN
 
-    
+ ---
+ 
+ （その他参考サイト）
+ - 注目のプライバシー Differential Privacy
+     https://www.jstage.jst.go.jp/article/jssst/29/4/29_4_40/_pdf
