@@ -12,6 +12,9 @@
 - Conditional Generative Adversarial Nets  
     https://arxiv.org/pdf/1411.1784.pdf
     
+- GENERATIVE MODELS AND MODEL CRITICISM VIA OPTIMIZED MAXIMUM MEAN DISCREPANCY  
+    https://arxiv.org/pdf/1611.04488.pdf
+
 - Deep Learning with Differential Privacy  
     https://arxiv.org/pdf/1607.00133.pdf
 
@@ -26,6 +29,9 @@
 
 - SyntheticMedData  
     https://github.com/naegawa/SyntheticMedData
+    
+- opt-mmd  
+    https://github.com/dougalsutherland/opt-mmd
 
 - Deep Learning with Differential Privacy  
     https://github.com/tensorflow/models/tree/master/research/differential_privacy
