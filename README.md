@@ -5,6 +5,8 @@
 python experiment.py
 ```
 
+`inputs` フォルダ内の
+
 ---
 
 （参考論文）
