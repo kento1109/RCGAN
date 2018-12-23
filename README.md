@@ -5,7 +5,15 @@
 python experiment.py
 ```
 
-`inputs` フォルダ内の
+デフォルトでは、 `inputs/sin_wave.npz` のデータを入力とする。  
+入力の `npz` の形式は以下のような保存形式を想定
+
+```
+ndarr_x = np.array([0.0, 0.1], [0.2, 0.3], [0.4, 0.5], [0.6, 0.7]])  # original data
+ndarr_y = np.array([0, 1, 2, 3])  # label
+
+np.savez('test.npz', x=ndarr_x, y=ndarr_y)
+```
 
 ---
 
