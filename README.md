@@ -15,6 +15,10 @@ ndarr_y = np.array([0, 1, 2, 3])  # label
 np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 ```
 
+## rotMNIST
+- オリジナル画像
+![alt tag](png/rotMNIST_original.png)
+
 ---
 
 （参考論文）
