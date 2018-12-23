@@ -17,7 +17,12 @@ np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 
 ## rotMNIST
 - オリジナル画像
+
 ![alt tag](png/rotMNIST_original.png)
+
+- RCGANにより生成された画像
+
+![alt tag](png/rotMNIST_generated.png)
 
 ---
 
