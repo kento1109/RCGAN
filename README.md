@@ -24,9 +24,14 @@ np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 
 ![alt tag](png/rotMNIST_generated.png)
 
----
+### 実験環境
+```
+keras (2.2.4)
+tensorflow(1.8.0)
+```
 
-（参考論文）
+
+### 参考論文
 - REAL-VALUED (MEDICAL) TIME SERIES GENERATION WITH RECURRENT CONDITIONAL GANS  
     https://arxiv.org/pdf/1706.02633.pdf
     
@@ -45,9 +50,7 @@ np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 - Improved Techniques for Training GANs  
     https://arxiv.org/pdf/1606.03498.pdf
     
----    
-
-（参考リポジトリ）
+### 参考リポジトリ
 - RGAN  
     https://github.com/ratschlab/RGAN
 
@@ -63,8 +66,6 @@ np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 - Keras-GAN  
     https://github.com/eriklindernoren/Keras-GAN
 
- ---
- 
- （その他参考サイト）
+ ### その他参考サイト
  - 注目のプライバシー Differential Privacy  
      https://www.jstage.jst.go.jp/article/jssst/29/4/29_4_40/_pdf
