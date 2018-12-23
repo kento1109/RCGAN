@@ -28,9 +28,8 @@ np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 ### 実験環境
 ```
 keras (2.2.4)
-tensorflow(1.8.0)
+tensorflow (1.8.0)
 ```
-
 
 ### 参考論文
 - REAL-VALUED (MEDICAL) TIME SERIES GENERATION WITH RECURRENT CONDITIONAL GANS  
