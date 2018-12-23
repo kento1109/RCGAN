@@ -1,5 +1,8 @@
 # RCGAN
 
+## 実行方法
+python experiment.py
+
 ---
 
 （参考論文）
