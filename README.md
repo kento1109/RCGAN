@@ -28,12 +28,10 @@ python make_dataset.py
 
 実行時に必要なパラメータ
 
-```
-FILNAME = 'mnist1.npz'あ
-SAMPLES = 300
-MAX_SEQ = 30
-INPUT_DIM = 784
-```
+- `FILNAME` ：保存先
+- `SAMPLES` ：読み込むサンプル数（サンプル数が大きくメモリに載らない場合、データセットを複数作成する。）
+- `MAX_SEQ` ：データの系列の長さ（GANではサンプルの系列長を同じ長さに揃える必要がある。）
+- `INPUT_DIM' ：データの入力次元数 
 
 ## rotMNISTの生成結果
 - オリジナル画像
