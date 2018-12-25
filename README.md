@@ -16,6 +16,25 @@ ndarr_y = np.array([0, 1, 2, 3])  # label
 np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 ```
 
+## rotMNIST形式の変換
+SyntheticMedDataを直接、GANには読み込めないので、プログラムにより入力形式を変換する。
+
+変換プログラムの実行方法
+```
+python make_dataset.py
+```
+
+`rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。
+
+実行時に必要なパラメータ
+
+```
+FILNAME = 'mnist1.npz'あ
+SAMPLES = 300
+MAX_SEQ = 30
+INPUT_DIM = 784
+```
+
 ## rotMNISTの生成結果
 - オリジナル画像
 
