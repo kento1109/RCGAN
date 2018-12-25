@@ -17,7 +17,7 @@ np.savez('test.npz', x=ndarr_x, y=ndarr_y)
 ```
 
 ## rotMNIST形式の変換
-SyntheticMedDataを直接、GANには読み込めないので、プログラムにより入力形式を変換する。
+SyntheticMedDataを直接、GANには読み込めないので、プログラムにより上記のような入力形式に変換する。
 
 変換プログラムの実行方法
 ```
@@ -31,7 +31,9 @@ python make_dataset.py
 - `FILNAME` ：保存先
 - `SAMPLES` ：読み込むサンプル数（サンプル数が大きくメモリに載らない場合、データセットを複数作成する。）
 - `MAX_SEQ` ：データの系列の長さ（GANではサンプルの系列長を同じ長さに揃える必要がある。）
-- `INPUT_DIM' ：データの入力次元数 
+- `INPUT_DIM` ：データの入力次元数 
+
+※GANは欠損値（NULL）があると、勾配計算が正しくできないことがあるので、欠損値は事前に0埋めなどをしておく必要がある。
 
 ## rotMNISTの生成結果
 - オリジナル画像
