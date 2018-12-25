@@ -21,6 +21,7 @@ SyntheticMedDataを直接、GANには読み込めないので、プログラム�
 
 変換プログラムの実行方法
 ```
+cd inputs
 python make_dataset.py
 ```
 
