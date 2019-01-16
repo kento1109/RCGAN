@@ -29,8 +29,8 @@ python make_rotMNIST.py
 
 ### 2019/01/16 追加  
 `rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）の場合、実験時にエラーが発生する。  
-※`rotMNIST.zip`はサイズが大きいので、少ないサンプル数しかgithub上に置けませんが、その場合はサンプル数が少なすぎてエラーが発生する。  
-rotMNIST を生成する場合、`inputs/build_rotMNIST.py`を実行することで同様のサンプルが得られる。  
+※rotMNISTはサイズが大きいので、少ないサンプル数しかgithub上に置けないが、その場合はサンプル数が少なすぎてエラーが発生する。  
+rotMNIST を生成したい場合、`inputs/build_rotMNIST.py`を実行することで同様のサンプルが得られる。  
 
 実行時に必要なパラメータ
 
