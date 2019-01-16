@@ -22,7 +22,7 @@ SyntheticMedDataを直接、GANには読み込めないので、プログラム�
 変換プログラムの実行方法
 ```
 cd inputs
-python make_data.py
+python make_rotMNIST.py
 ```
 
 `rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。
