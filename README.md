@@ -25,7 +25,7 @@ cd inputs
 python make_rotMNIST.py
 ```
 
-`rotMNIST.zip` （rotMNISTから3000サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。
+`rotMNIST.zip` （rotMNISTから3000サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。  
 ※ あくまで動作検証用のサンプルであり、GANの生成結果を保証するものではない
 
 実行時に必要なパラメータ
