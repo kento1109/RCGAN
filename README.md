@@ -8,7 +8,7 @@ python experiment.py -inputs "inputs/sin_wave.npz"
 ```
 
 デフォルトでは、 `inputs/sin_wave.npz` のデータを入力とする。  
-＊デフォルトを変更したい場合、experiment.pyの `FILE_NAME` を修正する
+＊デフォルトを変更したい場合、experiment.pyの `FILE_NAME` を修正する。  
 入力の `npz` の形式は以下のような保存形式を想定
 
 ```
