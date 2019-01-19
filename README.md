@@ -4,7 +4,7 @@
 ## 学習
 **2019/01/16 修正（対象ファイルを引数で指定）**
 ```
-python experiment.py inputs/sin_wave.npz
+python experiment.py -inputs "inputs/sin_wave.npz"
 ```
 
 デフォルトでは、 `inputs/sin_wave.npz` のデータを入力とする。  
