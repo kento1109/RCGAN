@@ -1,12 +1,14 @@
 # RCGAN
 ラベル情報を考慮した時系列データをGANにより生成する。
 
-## 実行方法
+## 学習
+**2019/01/16 修正（対象ファイルを引数で指定）**
 ```
-python experiment.py
+python experiment.py inputs/sin_wave.npz
 ```
 
 デフォルトでは、 `inputs/sin_wave.npz` のデータを入力とする。  
+＊デフォルトを変更したい場合、experiment.pyの `FILE_NAME` を修正する
 入力の `npz` の形式は以下のような保存形式を想定
 
 ```
@@ -27,7 +29,7 @@ python make_rotMNIST.py
 
 ~~`rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。~~
 
-### 2019/01/16 追加  
+**2019/01/16 追加**    
 `rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）の場合、実験時にエラーが発生する。  
 ※rotMNISTはサイズが大きいので、少ないサンプル数しかgithub上に置けないが、その場合はサンプル数が少なすぎてエラーが発生する。  
 rotMNIST を生成したい場合、`inputs/build_rotMNIST.py`を実行することで同様のサンプルが得られる。  
@@ -49,6 +51,22 @@ rotMNIST を生成したい場合、`inputs/build_rotMNIST.py`を実行するこ
 - RCGANにより生成された画像
 
 ![alt tag](png/rotMNIST_generated.png)
+
+## データ生成
+学習したモデルを利用してサンプルデータを生成
+
+```
+ python generate_sample.py -n 500
+```
+`n` は生成するサンプルデータの数
+
+## 評価（TSTR)
+Train on synthetic, test on real
+
+```
+ python tstr.py
+```
+
 
 ### 実験環境
 ```
