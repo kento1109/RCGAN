@@ -1,12 +1,15 @@
 # RCGAN
 ラベル情報を考慮した時系列データをGANにより生成する。
 
-## 実行方法
+## 学習
+**2019/01/16 修正（対象ファイルを引数で指定）**
 ```
-python experiment.py
+python experiment.py -inputs "inputs/sin_wave.npz"
 ```
 
-デフォルトでは、 `inputs/sin_wave.npz` のデータを入力とする。  
+デフォルト（引数を省略した）の場合、 `inputs/sin_wave.npz` のデータを入力とする。  
+＊デフォルトを変更したい場合、experiment.pyの `FILE_NAME` を修正する。  
+
 入力の `npz` の形式は以下のような保存形式を想定
 
 ```
@@ -22,10 +25,15 @@ SyntheticMedDataを直接、GANには読み込めないので、プログラム�
 変換プログラムの実行方法
 ```
 cd inputs
-python make_data.py
+python make_rotMNIST.py
 ```
 
-`rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。
+~~`rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）を解凍することで、動作確認できる。~~
+
+**2019/01/16 追加**    
+`rotMNIST.zip` （rotMNISTから300サンプルを抽出した圧縮ファイル）の場合、実験時にエラーが発生する。  
+※rotMNISTはサイズが大きいので、少ないサンプル数しかgithub上に置けないが、その場合はサンプル数が少なすぎてエラーが発生する。  
+rotMNIST を生成したい場合、`inputs/build_rotMNIST.py`を実行することで同様のサンプルが得られる。  
 
 実行時に必要なパラメータ
 
@@ -44,6 +52,26 @@ python make_data.py
 - RCGANにより生成された画像
 
 ![alt tag](png/rotMNIST_generated.png)
+
+## データ生成
+学習したモデルを利用してサンプルデータを生成
+
+```
+ python generate_sample.py -n 500
+```
+`-n` は生成するサンプルデータの数  
+※保存先や学習したモデルの指定などは、`generate_sample.py` のパラメータを修正する。
+
+## 評価（TSTR)
+Train on synthetic, test on real
+生成したデータで学習を行い、実データで評価を行う。  
+
+```
+ python tstr.py
+```
+
+※学習に使用する入力データなどは、`tstr.py` のパラメータを修正する。
+
 
 ### 実験環境
 ```
