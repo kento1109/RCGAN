@@ -263,7 +263,7 @@ class RCGAN():
                 if (epoch + 1) >= 10 and best_mmd2 - mmd2 > 0.005:
                     if self.save_model:
                         model_json_str = self.generator.to_json()
-                        open('models/' + '_generator_model.json', 'w') \
+                        open('models/' + 'generator_model.json', 'w') \
                             .write(model_json_str)
                         self.generator.save_weights(
                             'models/' + 'generator_weight.h5')
