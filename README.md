@@ -59,7 +59,8 @@ rotMNIST を生成したい場合、`inputs/build_rotMNIST.py`を実行するこ
 ```
  python generate_sample.py -n 500
 ```
-`-n` は生成するサンプルデータの数
+`-n` は生成するサンプルデータの数  
+※保存先や学習したモデルの指定などは、`generate_sample.py` のパラメータを修正する。
 
 ## 評価（TSTR)
 Train on synthetic, test on real
@@ -69,7 +70,8 @@ Train on synthetic, test on real
  python tstr.py
 ```
 
-※TSTRのネットワークはLSTMモデル
+※学習に使用する入力データなどは、`tstr.py` のパラメータを修正する。
+
 
 ### 実験環境
 ```
